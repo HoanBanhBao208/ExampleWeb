@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .nobox {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    color: red;
+    border: 2px solid black;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    color: red;
+    border: 2px solid black;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .content {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    color: red;
+    border: 2px solid black;
+    padding: 50px;
+    margin-bottom: 40px;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+  }
+
+  .paddingbox {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    color: red;
+    border: 2px solid black;
+    padding: 50px;
+    margin-bottom: 40px;
+    box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+  }
+</style>
+</head>
+<body>
+<!-- 
+<h2>Responsive navigation menu</h2>
+<p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div> -->
+
+<div class="nobox">Div này không bao gồm box-sizing</div>
+<div class="box">DIV này bao gồm cả box sizing</div>
+<div class="content">DIV này là content box</div>
+<div class="paddingbox">DIV này là padding box</div>
+
+</body>
+</html>
+

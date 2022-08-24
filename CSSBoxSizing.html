@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            p {
+                background: #cccccc;
+                border: 5px solid #cc0000;
+                height: 100px;
+                width: 200px;
+            }
+
+            p.contentBox {
+                box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+            }
+
+            p.borderBox {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="normal">Không sử dụng box</p>
+        <p class="contentBox">box-sizing: content-box</p>
+        <p class="borderBox">box-sizing: border-box</p>
+    </body>
+</html>

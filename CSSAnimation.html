@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 20s;
+            animation-iteration-count: 3;
+        }
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: white;}
+        }
+
+        #div1, #div2, #div3, #div4, #div5 {
+            width: 150px;
+            height: 80px;
+            background-color: red;
+            border: solid black;
+            font-weight: bold;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+
+        #div1 {
+            animation-timing-function: linear;
+        }
+
+        #div2 {
+            animation-timing-function: ease;
+        }
+
+        #div3 {
+            animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes mymove {
+            from {left: 0px}
+            to {left: 500px;}
+        }
+
+        .test {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: solid black;
+            position: relative;
+            animation-name: example1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes example1 {
+            0% {background-color: red; left:0px; top:0px;}
+            25% {background-color: yellow; left:200px; top: 0px;}
+            50% {background-color: green; left: 200px; top: 200px;}
+            75% {background-color: black; left: 0px; top: 200px;}
+            100% {background-color: blueviolet; left:0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+    <p><b>Note</b> When an animation is finished, it goes back to it's original style</p>
+
+    <h1>Thuộc tính animation-iteration-count</h1>
+    <p>Thuộc tính animation-iteration-count chỉ định số lần hoạt ảnh sẽ chạy. Ví dụ sau sẽ chạy hoạt ảnh 3 lần trước khi nó dừng lại:</p>
+    <div class="test"></div><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1>Thuộc tính Animation Timing Function</h1>
+
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+
+</body>
+</html>

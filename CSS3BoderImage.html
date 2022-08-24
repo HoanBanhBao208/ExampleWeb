@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+ #borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(/StubbornStudent/VD/test.png);
+    border-image-repeat: round;
+    border-image-slice: 60;
+    border-image-width: 100px;
+ }
+ #borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(/StubbornStudent/VD/test.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    border-image-width: 20px;
+ }
+ #borderimg3 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(/StubbornStudent/VD/test.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    border-image-width: 30px;
+ }
+
+div {
+    width: 300px;
+    border: 2px solid black;
+    padding: 100px 200px 75px 100px;
+    background-color: lightblue;
+    box-sizing: border-box;
+    margin: 100px 20px 0 20px ;
+}
+
+div.vd {
+    background: -webkit-repeating-linear-gradient(left, white 80%, red, white);
+
+}
+
+div.radgradiant {
+    background-image: radial-gradient(farthest-side at 60% 55%, bisque, crimson, indigo);
+}
+
+#test {
+    margin:10px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    background-image: -webkit-linear-gradient(rgba(11, 115, 243, 0.9),rgba(252, 253, 253, 0.9));
+}
+</style>
+ 
+</head>
+<body>
+<p id="borderimg1">Ví dụ border-image trong CSS.</p>
+<p id="borderimg2">Ví dụ border-image trong CSS.</p>
+<p id="borderimg3">Ví dụ border-image trong CSS.</p>
+<div class="box">
+    <p>Stubborn Student</p>
+</div>
+
+<div class="vd">
+    Left to right
+</div>
+
+<div class="radgradiant">
+    Rad gradiant
+</div>
+<h1 id="test">gradiant time</h1>
+</body>
+</html>
